@@ -31,7 +31,7 @@
 // console.log(`O primeiro número é divisivel pelo segundo?${num1%num2===0}`)
 // console.log(`O segundo número é divisivel pelo primeiro?${num2%num1===0}`)
 
-// Desafios 
+// // Desafios 
 // 1. a
 // let kelvin = 77 - 32*(5/9) + 273.15
 // let fahrenheit = 80 * (9/5) + 32
@@ -63,7 +63,7 @@
  
  //3.
 
- let libras = 20
+ let libras = 30
  let oz = 10.5
  let mi = 100
  let ft = 50
@@ -71,7 +71,7 @@
  let xic= 450
 
 let librasParakg = libras / 2.205 
-   console.log(`20 libras esquivalem a:${librasParakg.toFixed(2)}kg`)
+   console.log(`30 libras equivalem a:${librasParakg.toFixed(2)}kg`)
 
 let ozParakG = oz / 35.274
    console.log(`10.5 oz equivalem a:${ozParakG.toFixed(2)}kg`)
