@@ -83,27 +83,27 @@
 
 //  console.log (pessoas(pessoa1,pessoa2))
 
-const carrinho = []
-const fruta1 = {nome: "atemoia",disponibilidade:true}
-const fruta2 = {nome: "morango",disponibilidade:true}
-const fruta3 = {nome: "banana",disponibilidade: true}
+// const carrinho = []
+// const fruta1 = {nome: "atemoia",disponibilidade:true}
+// const fruta2 = {nome: "morango",disponibilidade:true}
+// const fruta3 = {nome: "banana",disponibilidade: true}
 
-const paraCarrinho = fruta => carrinho.push(fruta)
+// const paraCarrinho = fruta => carrinho.push(fruta)
 
-paraCarrinho(fruta1)
-paraCarrinho(fruta2)
-paraCarrinho(fruta3)
+// paraCarrinho(fruta1)
+// paraCarrinho(fruta2)
+// paraCarrinho(fruta3)
 
-console.log (carrinho)
+// console.log (carrinho)
 
-const disponibilidade = obj => {
+// const disponibilidade = obj => {
 
-	obj.disponibilidade = !obj.disponibilidade
+// 	obj.disponibilidade = !obj.disponibilidade
 
-	return obj
-
+// 	return obj
+// 
 }
- 
+ // 
  console.log(disponibilidade(carrinho[0]))
 
 
