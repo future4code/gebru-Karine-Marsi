@@ -25,62 +25,62 @@
 //}
 //2. 
 //a.
-const arrayOriginal = [2,3,4,5,6,8,9,10,12]
+// const arrayOriginal = [2,3,4,5,6,8,9,10,12]
 
-for(let i= 0; i < arrayOriginal.length;i++){
-	console.log( arrayOriginal [i])
+// for(let i= 0; i < arrayOriginal.length;i++){
+// 	console.log( arrayOriginal [i])
  
-}
+// } 
 
-//b
+// //b
  
-for(let i= 0; i < arrayOriginal.length;i++){
-	console.log(arrayOriginal [i]/10)
-	}  
+// for(let i= 0; i < arrayOriginal.length;i++){
+// 	console.log(arrayOriginal [i]/10)
+// 	}  
                                                             
-//c
+// //c
 
-const array2 =[]
+// const array2 =[]
 
-for(let i= 0; i < arrayOriginal.length;i++){      
+// for(let i= 0; i < arrayOriginal.length;i++){      
 
-	if(arrayOriginal[i] % 2){
- 		array1.push(arrayOriginal[i])
+// 	if(arrayOriginal[i] % 2){
+//  		array1.push(arrayOriginal[i])
      
- console.log (array2)
-}
- letraC = (arrayOriginal)
+//  console.log (array2)
+// }
+//  letraC = (arrayOriginal)
 
  
-//d
+// //d
    
-   let array = [i]
+//    let array = [i]
 	
-	for(let i= 0; i < arrayOriginal.length;i++){
-	  array.push(`O elemento do índex é ${arrayOriginal[i]}`)    
-}
-}
- 	console.log (letraD)
+// 	for(let i= 0; i < arrayOriginal.length;i++){
+// 	  array.push(`O elemento do índex é ${arrayOriginal[i]}`)    
+// }
+// }
+//  	console.log (letraD)
 
   
-//e
+// //e
    
- let valorMaximo = 0
- let valorMinimo = 1000
+//  let valorMaximo = 0
+//  let valorMinimo = 1000
   
- for(let i = 0; i < arrayOriginal.length;i++){
+//  for(let i = 0; i < arrayOriginal.length;i++){
 
- 	if(arrayOriginal[i] < valorMinimo){
+//  	if(arrayOriginal[i] < valorMinimo){
    		 
-  		 valorMinimo = arrayOriginal[i]
-	}
+//   		 valorMinimo = arrayOriginal[i]
+// 	}
   	
-  else if (arrayOriginal[i] > valorMaximo){
+//   else if (arrayOriginal[i] > valorMaximo){
   		
- 		valorMaximo = arrayOriginal[i]
+//  		valorMaximo = arrayOriginal[i]
 	
-	}
-  }   
+// 	}
+//   }   
 
-  console.log(`O maior  número é ${valorMaximo} e o menor número é ${valorMinimo}`)
+//   console.log(`O maior  número é ${valorMaximo} e o menor número é ${valorMinimo}`)
    
