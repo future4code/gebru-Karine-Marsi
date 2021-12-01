@@ -74,4 +74,4 @@ const operaçoes = (numero1,numero2) => {
 }
 
 
-operaçoes (36,2)
+	operaçoes (36,2)==
