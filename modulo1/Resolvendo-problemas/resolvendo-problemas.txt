@@ -1,9 +1,0 @@
-Sete passos para resolver problemas na propgramação 
-
-1. Ter atenção no enunciado, saber interpretar e encontrar informações é fundamental.
-2. Retirar informações relevantes,usá-las para nomear variáveis e usar os verbos para nomear funções.
-3. Pensar nas entradas e sáidas do seu programa,(umas das princpais tarefas eu diria), ao pensar nas entradas podemos criar funções para que não fique tudo solto no escopo global. 
-4. Fazer um mapa mental, um esquema visual ajuda a traçar um caminho e um raciocinio lógico antes de escrever o código. 
-5. Criar um código feio, o que não quer dizer algo desoraganizado, mas implementar o que foi pedido no enunciado ou nas instruções, uma primeira solução.
-6. Testar o código e prestar atenção ao erros, eles são amigos. 
-7. Refatorar: repensar nomes de maneira a facilitar a leitura e compreensão de outros ao eu código, encontrar uma meneira de melhorar a performance do mesmo sem alterar a funcionalidade. 
