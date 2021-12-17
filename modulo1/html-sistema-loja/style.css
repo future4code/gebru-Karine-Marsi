@@ -1,0 +1,31 @@
+/*Estilo global de cada página*/
+ /*cabeçalho e rodapé da home */
+
+/*Estilização da home */
+h1 {
+	color: darkgreen ;
+	font-style:italic ;
+}
+
+p {
+	color: mediumseagreen;
+    font-weight: bold;
+    font-size:x- large ;
+}
+
+div{
+	color: darkgreen;
+}
+
+strong {
+	color: darkgreen;
+	font-size:x-large;
+}
+
+   .redimencionar{
+   	max-width:75px;
+max-height:75px;
+width: auto;
+height: auto;
+   }
+
