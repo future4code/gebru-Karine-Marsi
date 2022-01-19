@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+ * {
+	margin:0;
+	padding:0;
+	font-family:"Roboto",sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+body {
+	background-color:#282828
+}
+
+header {
+	height:60px;
+	width: 100%;
+
+}
+
+header .container {
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+/* desktop */
+@media screen and (min-width:701){
+	header div input{
+		width:211px;
+		height:25px;
+	}
+
+	main .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 10px;
+		width: 90%;
+	}
+
+	main .container div{
+		width:200px;
+		height:280px;
+	}
+	main .container img {
+		width:100%;
+	}
+}
+/* Mobile */
+@media screen and (max-width:700px) {
+	header div h1{
+		font-size:24px;
+		
+	}
+	header div input{
+		width: 100px;
+		height:25px;
+	}
+
+	main .container div{
+		width:300px;
+		height: 280px;
+
+	}
+	main .container div img{
+		height:200px;
+		width:100%;
+	}
+	main .container div p{
+		text-align: center;
+	}
+	main .container:first-child{
+		margin-top:30px;
+
+	}
+	main .container {
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:center;
+
+	}
+
+	
+}
+
+header div{
+	margin-top: 2%;
+}
+
+header div h1{
+	color: red;
+	font-family: 'Roboto', sans-serif; ;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+main .container .first {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+main .container .first div {
+	width: 20%;
+}
+
+
+footer{
+
+width:100%;
+height:50px;
+margin: auto;
+bottom:0;
+background-color: black;
+font-size: 30px;
+color: white;
+text-align: center;
+margin-top: 10%;
+}
