@@ -67,7 +67,7 @@ function App() {
         <footer>
             <h4>Oi! Eu moro no footer!</h4>
         </footer>
-     <div/>
+     </div>
 
     </div>
 
