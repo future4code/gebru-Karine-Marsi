@@ -1,14 +1,12 @@
 import React from "react";
-import TelaInicial from "./Components/TelaInicial";
+import {Router} from "./Components/Router";
 
-function App() {
+const App = () => {
   return (
-    <>
-    
-      Olá
-      <TelaInicial />
-    </>
+    <div>
+      <Router/>
+    </div>
   );
-}
+};
 
 export default App;
