@@ -1,10 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const TripDetailsPage = ()=>{
+ const TripDetailsPage = ()=>{
 
-    retur(
+    return(
 
         <> TripDetailsPage</>
     )
 }
+  export default  TripDetailsPage;
