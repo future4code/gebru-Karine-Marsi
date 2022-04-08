@@ -1,7 +1,7 @@
 import React from "react";
 import LoginPage from "../Pages/LoginPage";
 import ListTripsPage from "../Pages/ListTripsPage";
-import TripDetailsPage from "..Pages/TripDetailsPage";
+import TripDetailsPage from "../Pages/TripDetailsPage";
 import AdminHomePage from "../Pages/AdminHomePage";
 import ApplicationFormPage from "../Pages/ApplicationFormPage";
 import CreateTripPage from "../Pages/CreateTripPage";
@@ -15,7 +15,7 @@ export const Router = () => {
         <Route index element={<HomePage />} />
         <Route path="trips/list" element={<ListTripsPage />} />
         <Route path="trips/application" element={<ApplicationFormPage />} />
-        <Route path="login " element={<LoginPage />} />
+        <Route path="login" element={<LoginPage />} />
         <Route path="admin/trips/list" element={<AdminHomePage />} />
         <Route path="admin/trips/create" element={<CreateTripPage />} />
         <Route path="admin/trips/:id " element={<TripDetailsPage />} />

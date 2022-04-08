@@ -1,19 +1,32 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import {HomePageContainer} from "./styleGlobal";
 
+const HomePage = () => {
+  const navigate = useNavigate();
+  
+  const goToAdminHomePage = () => {
+    navigate("login");
+  };
 
-const HomePage = () =>{
+  const goToListTripsPage = () => {
+    navigate("trips/list");
+  };
+   const goToLoginPage = () => {
 
-    const navigate = useNavigate ()
-    return (
-        <div>
-            <h1>Labex</h1>
-            <div>
-                <button>Ver Viagens</button>
-                <button> Área Admin</button>
-            </div>
-        </div>
-    )
-}
+    navigate("/login");
+   };
+   
+
+  return (
+    <HomePageContainer>
+      <h1>Labex</h1>
+      <div>
+        <button onClick={goToListTripsPage}>Ver Viagens</button>
+        <button onClick={goToAdminHomePage}>Área Admin</button>
+      </div>
+    </HomePageContainer>
+  );
+};
 
 export default HomePage;

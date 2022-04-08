@@ -1,12 +1,8 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const CreateTripPage = ()=> {
-
-return(
-
-    <> CreateTripPage</>
-)
-}
+const CreateTripPage = () => {
+  return <> CreateTripPage</>;
+};
 
 export default CreateTripPage;
