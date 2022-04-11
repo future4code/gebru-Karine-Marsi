@@ -2,15 +2,19 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react/cjs/react.development";
-import { Countries } from "../constantes/Countries";
-import useRequestData from "../hooks/useRequestData";
-import useForm from "../hooks/useForm";
-import useForm from "../hooks/useForm";
+import { Countries } from "../Constantes/Countries";
+import useRequestData from "../Hooks/useRequestData";
+import useForm from "../Hooks/useForm";
+import { Formulario } from "./styleGlobal";
+import { Button } from "./styleGlobal";
+
+
+
 
 
 const ApplicationFormPage = () => {
   
-  const {form, onChange,cleanFields}= useForm ({name:"", age:"",applicationText,"", profession: "", country: "" })
+  const {form, onChange,cleanFields}= useForm ({name:"", age:"",applicationText:"", profession:"", country: "" })
   const [trips] = useRequestData('${Base_Url}/trips')
   const [tripId, setTripId] = useState('')
 
@@ -20,15 +24,15 @@ const ApplicationFormPage = () => {
   navigate('home');
   }
 
-  const mapCountries = Countries.map((Country)) => {
+  const mapCountries = Countries.map((Country) => {
 
-    return (<option value={country} >{ country}</option>)
-  }
+    return (<option value={Country} >{Country}</option>)
+  })
 
-  const onChangeSelect = (event) => {
+    const onChangeSelect = (event) => {
     setTripId(event.target.value)
   }
-const appyToTrip= (body) =>{
+    const appyToTrip= (body) =>{
   axios
   .post()
   .then((response) =>{
@@ -38,7 +42,7 @@ const appyToTrip= (body) =>{
     })
 
   })
-};
+}
 
 
 return( 
@@ -53,7 +57,7 @@ return(
 <h2> Formulário de Inscrição</h2>
 <Formulario onSubmit={sendForm}>
   <select>
-    onChange {onChangeSelect}>
+    onChange {onChangeSelect}
     <option>Selecione um destino </option>
     {mapId}
   </select>
@@ -110,7 +114,7 @@ return(
                 <button >Enviar</button>
             </Formulario>
         </ApplicationFormPage>
-    )
-};
+  )}
+  
 
 export default ApplicationFormPage;

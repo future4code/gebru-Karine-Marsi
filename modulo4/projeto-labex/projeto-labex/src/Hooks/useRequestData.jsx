@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function useRequestData(url) {
+
+   const useRequestData = () => {
     const [data, setData] = useState(undefined)
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState("")
@@ -21,6 +22,9 @@ export default function useRequestData(url) {
                 console.log(err.response, "resposta errada")
                 
             })
-    }, [url])
+    } ,[url])
 
     return [data, isLoading, error]
+};
+
+    export default useRequestData;
