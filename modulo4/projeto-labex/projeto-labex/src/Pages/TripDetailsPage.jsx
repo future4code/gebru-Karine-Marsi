@@ -5,8 +5,7 @@ import { useProtectedPage } from "../Hooks/useProtectedPage";
 import { Base_Url, header } from "../Constantes/Base_Url";
 import Swal from "sweetalert2";
 import { ContainerTripDetails } from "./styleGlobal";
-import { Button } from "./styleGlobal";
-import { ContainerLogin } from "./styleGlobal";
+
 
 
 export default function TripDetailsPage(props) {
@@ -42,6 +41,8 @@ export default function TripDetailsPage(props) {
             })
     }
 
+    const decideCandidate = () => {}
+
   
 
     const detailsMap = [details].map((data) =>{
@@ -62,8 +63,8 @@ export default function TripDetailsPage(props) {
             <ContainerTripDetails>
             {detailsMap}  
             </ContainerTripDetails>
-            <Button onClick={getTripDetail}>Detalhes</Button>
-            <Button onClick={deleteTrip}>Deletar</Button>
+            <button onClick={getTripDetail}>Detalhes</button>
+            <button onClick={deleteTrip}>Deletar</button>
             <button onClick={decideCandidate}>Candidatos</button>
         </div>
     )

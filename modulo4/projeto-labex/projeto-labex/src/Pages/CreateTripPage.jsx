@@ -7,9 +7,9 @@ import { Base_Url } from "../Constantes/Base_Url";
 import Swal from "sweetalert2";
 import { header } from "../Constantes/Base_Url";
 import { useNavigate } from "react-router-dom";
-import { Formulario } from "./styleGlobal";
-import { Header } from "./styleGlobal";
-import { Button } from "./styleGlobal";
+// import { Formulario } from "./styleGlobal";
+// import { Header } from "./styleGlobal";
+// import { Button } from "./styleGlobal";
 import { ContainerLogin } from "./styleGlobal";
 
 export default function CreateTripPage() {
@@ -52,16 +52,16 @@ export default function CreateTripPage() {
 
     return (
         <ContainerLogin>
-            <Header>
-                <Button onClick={() => navigate(-1)}>
+            <header>
+                <button onClick={() => navigate(-1)}>
                     Voltar
-                </Button>
-                <Button onClick={goToAdminHomePage}>
+                </button>
+                <button onClick={goToAdminHomePage}>
                     Página Administrativa
-                </Button>
+                </button>
                 <h1>LabeX</h1>
-            </Header>
-            <Formulario onSubmit={sendForm}>
+            </header>
+            <formulario onSubmit={sendForm}>
                 <h2>
                     Criar novas viagens
                 </h2>
@@ -115,7 +115,7 @@ export default function CreateTripPage() {
                 />
 
                 <button>Criar</button>
-            </Formulario>
+            </formulario>
         </ContainerLogin>
     )
 }
