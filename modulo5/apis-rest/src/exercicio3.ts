@@ -1,20 +1,20 @@
 import {Request, Response} from "express";
 import {users} from "./data";
 
-export const exercicio2 = (req: Request, res: Response) => {
+export const exercicio3 = (req: Request, res: Response) => {
     let errorCode = 500;
     try {
-        const type = req.query.type as string;
-        if (!type){
+        const name = req.query.name as string;
+        if (!name){
             errorCode = 422;
             throw new Error("Não foi dessa vez, reveja seu código!")
         }
-        const filtro = users.filter(usuario => usuario.type.toLowerCase() === type.toLowerCase()) 
+        const filtro = users.filter(usuario => usuario.name.toLowerCase() === name.toLowerCase()) 
 
         if(!filtro.length){
 
          errorCode = 404;
-         throw new Error("Isso não faz meu tipo!")
+         throw new Error("Esse nome não existe cara!")
         }
         res.send(filtro)
         
