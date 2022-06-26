@@ -41,19 +41,24 @@ app.post("/test", (req:Request, res:Response) => {
 })
 
 //4
-app.put("/editeproduto", req:Request, res:Response);
+app.put("/editeproduto", (req:Request, res:Response) =>{
 
-//5 
 
-app.put("/editeproduto", req:Request, res:Response)=>{
+});
+
+//5  
+
+app.put("/editeproduto", (req:Request, res:Response)=>{
 
     const{ name,price} = req.body
     produtos.filter ((p) =>{
         if(name === p.name) {p}
     })
-}
+
 .map((p) =>{
     p.price =price
 })
 
 res.send(produtos)
+
+})
